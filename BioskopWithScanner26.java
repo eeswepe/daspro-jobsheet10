@@ -55,7 +55,7 @@ public class BioskopWithScanner26 {
                     for(int i=0;i<penonton.length;i++) {
                         for(int j=0;j<penonton[i].length;j++) {
                             if (penonton[i][j] == null) {
-                                System.out.print("****");
+                                System.out.print("*** ");
                             } else {
                                 System.out.print(penonton[i][j] + " ");
                             }
