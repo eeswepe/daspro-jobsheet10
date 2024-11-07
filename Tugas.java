@@ -17,7 +17,8 @@ public class Tugas {
                 System.out.print("Input data dari responden ke-" + (j+1) + ": ");
                 int nilai;
                 nilai = sc.nextInt();
-                if(nilai < 1 && nilai > 5) {
+                if(nilai < 1 || nilai > 5) {
+                    j--;
                     continue;
                 }
                 data[i][j] = nilai;
