@@ -29,8 +29,13 @@ public class BioskopWithScanner26 {
                         System.out.print("Masukkan kolom: ");
                         kolom = sc.nextInt();
             
-                        penonton[baris-1][kolom-1] = nama;
-            
+                        if((baris > 0 && baris <= penonton.length) && (kolom > 0 && kolom <= penonton[0].length)) {
+                            penonton[baris-1][kolom-1] = nama;
+                        } else {
+                            System.out.println("Nomor baris/kolom tidak tersedia. Silakan coba lagi.");
+                            continue;
+                        }
+
                         System.out.print("Input penonton lainnya? (y/n): ");
                         next = sc.next();
             
